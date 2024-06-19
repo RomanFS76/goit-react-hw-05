@@ -14,3 +14,12 @@ export const getTrendingMovieApi = async () => {
     return data.results
     
 }
+
+// https://api.themoviedb.org/3/movie/{movie_id}
+
+export const getDetailsMovieApi = async (id) => {
+  const {data}  = await axios.get (`3/movie/${id}`,option )
+  return data
+  
+}
+
